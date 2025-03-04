@@ -1,7 +1,15 @@
+# Local AI Assistant Structure
 
-your-project/
-├── memory/
-│   └── chat_history.json       # Conversation memory
+├── .env.example             # Environment template
+├── requirements.txt         # Python dependencies
+├── local_assistant.py       # Main application
 ├── config/
-│   └── context_rules.yaml      # Custom reasoning rules
-└── local_assistant.py          # Core logic (see below)
+│   ├── context_rules.yaml   # Custom response guidelines
+│   └── models.yaml          # Configured Ollama models
+├── memory/
+│   └── chat_history.json    # Conversation storage
+├── tests/
+│   ├── test_basic.py        # Core functionality tests
+│   └── test_memory.py       # Memory persistence tests
+└── docs/
+    └── SETUP.md             # Installation instructions
